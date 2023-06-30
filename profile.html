@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profile Netflix Clone</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Netflix-assets/assets/css/style.css" />
+  </head>
+
+  <body class="bg-dark text-light">
+    <!-- NAVBAR -->
+    <nav>
+      <img id="img1" src="Netflix-assets/assets/netflix_logo.png" alt="" />
+    </nav>
+
+    <!-- HEADER -->
+    <header class="w-50 text-start mx-auto">
+      <h1 class="w-100 border-bottom fs-1 fw-bold text-sm-center text-md-start">
+        Edit Profile
+      </h1>
+    </header>
+    <!-- MAIN -->
+    <main class="d-flex container-fluid justify-content-center">
+      <div class="row">
+        <!-- 1 -->
+        <div
+          class="col col-md-5 col-sm-12 d-flex justify-content-sm-center justify-content-md-end"
+        >
+          <img
+            class=""
+            id="img3"
+            src="Netflix-assets/assets/avatar.png"
+            alt=""
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-pencil bg-dark"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"
+            />
+          </svg>
+        </div>
+        <!-- 2 -->
+        <div class="col col-md-5 col-sm-12 border-bottom border-light fs-5">
+          <button
+            class="bg-secondary h-25 text-light w-100 mt-4 text-sm-center text-md-start"
+          >
+            Strive Student
+          </button>
+          <p class="mb-0 mt-3 text-sm-center text-md-start">Language:</p>
+          <div
+            class="nav-item dropdown d-flex justify-content-sm-center justify-content-md-start"
+          >
+            <a
+              class="nav-link dropdown-toggle border border-light text-center mt-0 mb-4 w-25"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              >English</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Italian</a></li>
+              <li><a class="dropdown-item" href="#">Spanish</a></li>
+              <li><a class="dropdown-item" href="#">French</a></li>
+            </ul>
+          </div>
+          <!-- 3 -->
+          <div class="col-2"></div>
+        </div>
+        <!-- 1 -->
+        <div class="col-sm-12 col-md-5"></div>
+        <!-- 2 -->
+        <div
+          class="col-sm-12 col-md-5 mt-3 border-bottom border-light fs-5 text-sm-center text-md-start"
+        >
+          <p>Maturity Settings:</p>
+          <button class="bg-secondary w-75 text-light">
+            ALL MATURITY RATINGS
+          </button>
+          <p>Show titles of all maturity ratings for this profile.</p>
+          <button class="bg-dark border border-light w-25 text-light mb-4">
+            EDIT
+          </button>
+        </div>
+        <!-- 3 -->
+        <div class="col-2"></div>
+        <!-- 1 -->
+        <div class="col-sm-12 col-md-5"></div>
+        <div
+          class="col-sm-12 col-md-5 border-bottom border-light fs-5 text-sm-center text-md-start"
+        >
+          <p class="mt-4">Autoplay controls</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault ">
+              Autoplay next episode in a series on all device
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexCheckChecked">
+              Autoraplay previews while browsing on all device
+            </label>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="col-2"></div>
+        <div class="d-flex justify-content-center mt-4 fs-2">
+          <button
+            id="button"
+            type="button"
+            class="btn btn-dark border border-light mx-2"
+          >
+            SAVE
+          </button>
+          <button id="button" class="btn btn-dark mx-2 border border-light">
+            CANCEL
+          </button>
+          <button id="button" class="btn btn-dark mx-2 border border-light">
+            DELETE PROFILE
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <button type="button" class="btn btn-dark"></button>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+nav #img1{
+    width: 100px !important;
+}
+nav #img2{
+    width: 50px;
+}
+li{
+    list-style-type: none !important;
+}
+button{
+    width: 150px;
+}
+
+#img3{
+    width: 150px;
+}
+
+#animation:hover{
+    transform: scale(1.5)!important;
+    z-index: 1 !important;
+    }
